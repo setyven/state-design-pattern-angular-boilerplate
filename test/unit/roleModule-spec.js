@@ -107,8 +107,6 @@ define(['app', 'angular.mocks'], function () {
 
 		it('should define getDashboardAnalytics', function() {
 			expect(this.role.getDashboardAnalytics).toBeDefined();
-			console.log(this.role.getDashboardAnalytics());
-			console.log(this.role.getRoleDescription());
 		});
 	});
 
