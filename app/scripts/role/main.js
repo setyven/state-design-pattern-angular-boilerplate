@@ -28,6 +28,15 @@ define(['angular'], function(angular) {
 			this.getDashboardAnalytics = function() {
 				return 'This should return nothing, I don\'t really care';
 			};
-		});
+		})
+		.service('advertiserRoleService', function() {
+			this.getRoleDescription = function() {
+				return 'I am advertiser';
+			};
 
+			this.getDashboardAnalytics = function() {
+				return 'This should return 4 pie charts of nearby advertisement';
+			};
+		});
 });
+

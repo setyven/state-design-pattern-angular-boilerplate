@@ -38,4 +38,58 @@ define(['app', 'angular.mocks'], function () {
 		});
 	});
 
+	describe('Admin role service', function() {
+		beforeEach(inject(function(_adminRoleService_) {
+			this.role = _adminRoleService_;
+		}));
+		
+		it('should be defined', function() {
+			expect(this.role).toBeDefined();
+		});
+
+		it('should define getRoleDescription', function() {
+			expect(this.role.getRoleDescription).toBeDefined();
+		});
+
+		it('should define getDashboardAnalytics', function() {
+			expect(this.role.getDashboardAnalytics).toBeDefined();
+		});
+	});
+
+	describe('Publisher role service', function() {
+		beforeEach(inject(function(_publisherRoleService_) {
+			this.role = _publisherRoleService_;
+		}));
+		
+		it('should be defined', function() {
+			expect(this.role).toBeDefined();
+		});
+
+		it('should define getRoleDescription', function() {
+			expect(this.role.getRoleDescription).toBeDefined();
+		});
+
+		it('should define getDashboardAnalytics', function() {
+			expect(this.role.getDashboardAnalytics).toBeDefined();
+		});
+	});
+
+	describe('Admin role service', function() {
+		beforeEach(inject(function(_advertiserRoleService_) {
+			this.role = _advertiserRoleService_;
+		}));
+		
+		it('should be defined', function() {
+			expect(this.role).toBeDefined();
+		});
+
+		it('should define getRoleDescription', function() {
+			expect(this.role.getRoleDescription).toBeDefined();
+		});
+
+		it('should define getDashboardAnalytics', function() {
+			expect(this.role.getDashboardAnalytics).toBeDefined();
+		});
+	});
+
 });
