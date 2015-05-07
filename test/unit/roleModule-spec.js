@@ -92,4 +92,24 @@ define(['app', 'angular.mocks'], function () {
 		});
 	});
 
+	describe('A slightly different than publisher', function() {
+		beforeEach(inject(function(_minorPublisherRoleService_) {
+			this.role = _minorPublisherRoleService_;
+		}));
+		
+		it('should be defined', function() {
+			expect(this.role).toBeDefined();
+		});
+
+		it('should define getRoleDescription', function() {
+			expect(this.role.getRoleDescription).toBeDefined();
+		});
+
+		it('should define getDashboardAnalytics', function() {
+			expect(this.role.getDashboardAnalytics).toBeDefined();
+			console.log(this.role.getDashboardAnalytics());
+			console.log(this.role.getRoleDescription());
+		});
+	});
+
 });
